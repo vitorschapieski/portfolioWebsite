@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-row: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.name {
+  grid-column: 1/6;
+  grid-row: 1/5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: white;
+  
+}
+
+.name span {
+  font-size: 12vw;
+  font-weight: 800;
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+.name span:not(:first-child) {
+  margin-left: -0.23em;
+}
+
+nav {
+  grid-row: 5/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: 0;
+  cursor: pointer;
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+  
+}
+
+.letra:hover {
+  color: rgba(0, 0, 0, 0.452);
+  
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.651);
+  position: fixed;
+  display: grid;
+  place-content: center;
+}
+
+.page {
+  width: 70%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px 25px 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.modal1.page {
+  border-left: 25px solid black;
+  border-radius: 20px 0 0 20px;
+  background-color: rgba(255, 255, 255, 0.534);
+  display: grid;
+  gap: 25px;
+}
+
+.modal2.page {
+  border-right: 25px solid black;
+  border-radius: 0px 20px 20px 0px;
+  background-color: rgba(255, 255, 255, 0.534);
+  display: grid;
+  gap: 25px;
+}
+
+
+.m-aboutMe:target {
+  visibility: visible;
+}
+
+.m-myNetworks:target {
+  visibility: visible;
+}
+
+.m-aboutMe {
+  visibility: hidden;
+
+}
+
+.m-myNetworks {
+  visibility: hidden;
+}
+
+.modalTitle {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left: 25px;
+  margin-bottom: 25px;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
