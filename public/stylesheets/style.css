@@ -49,13 +49,21 @@ button {
   border-radius: 0.2rem;
   border: 0;
   cursor: pointer;
-  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
   font-size: 1rem;
+  background-color: transparent;
+  margin-top: 50px;
   
 }
 
+button:hover {
+  margin-bottom: 8px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.267);
+  transition: all .4s ease;
+}
+
 .letra:hover {
-  color: rgba(0, 0, 0, 0.452);
+  color: rgba(0, 0, 0, 0.137);
+  transition: all .4s ease;
   
 }
 
@@ -75,6 +83,7 @@ button {
   padding: 20px 25px 5px;
   overflow-y: auto;
   overflow-x: hidden;
+  
   
 }
 
@@ -133,4 +142,5 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  padding-bottom: 25px;
 }
